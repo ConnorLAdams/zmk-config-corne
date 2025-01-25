@@ -42,12 +42,12 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  ^  |  &  |  UP |  (  |  )  | DEL  |
+// |  ALT |  Q  |  W  |  E  |  R  |  T  |   |  ^  |  &  |  UP |  (  |  )  | DEL  |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  -  | LFT | DWN | RGT |  \  |  ALT |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  -  |  =  |  [  |  ]  | "|" | SHFT |
 //                    | GUI | ADJ | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp CARET &kp HOME  &kp UP   &kp END   &kp RPAR &kp DEL
+   &kp LALT   &kp Q &kp W &kp E &kp R &kp T    &kp CARET &kp HOME  &kp UP   &kp END   &kp RPAR &kp DEL
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G    &kp MINUS &kp LEFT  &kp DOWN &kp RIGHT &kp BSLH &kp RALT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp PIPE &kp RSHFT
                   &kp LGUI &mo 3 &kp SPACE    &kp RET   &trans    &kp RALT
@@ -62,8 +62,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4   &kp CARET &kp AMPS     &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL   &trans       &trans       &trans         &kp C_VOL_DN  &trans         &kp MINUS &kp C_VOL_UP &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT   &trans       &trans       &trans         &trans        &trans         &kp UNDER &kp PLUS     &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
+   &kp CAPS    &trans       &trans       &trans         &kp C_VOL_DN  &kp C_MUTE     &kp MINUS &kp C_VOL_UP &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT   &trans       &trans       &trans         &kp C_BRI_DN  &trans         &kp UNDER &kp C_BRI_UP &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                                          &kp LGUI       &trans        &kp SPACE      &kp RET   &trans       &kp RALT
                         >;
                 };
