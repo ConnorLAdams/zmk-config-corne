@@ -35,7 +35,7 @@
                         bindings = <
    &kp ESC    &kp N1 &kp N2 &kp N3   &kp N4  &kp N5     &kp N6   &kp N7   &kp N8   &kp N9    &kp N0 &kp BSPC
    &kp LCTRL  &trans &trans &trans   &trans  &trans     &kp LEFT &kp LEFT &kp DOWN &kp RIGHT &trans &trans
-   &kp LSHFT  &trans &trans &trans   &trans  &trans     &trans   &trans   &trans   &trans    &trans &trans
+   &kp LSHFT  &mo 4  &tog 4 &trans   &trans  &trans     &trans   &trans   &trans   &trans    &trans &trans
                             &kp LGUI &trans  &kp SPACE  &kp RET  &mo 3    &kp RALT
                         >;
                 };
@@ -65,6 +65,20 @@
    &kp CAPS    &trans       &trans       &trans         &kp C_VOL_DN  &kp C_MUTE     &kp MINUS &kp C_VOL_UP &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT   &trans       &trans       &trans         &kp C_BRI_DN  &trans         &kp UNDER &kp C_BRI_UP &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                                          &kp LGUI       &trans        &kp SPACE      &kp RET   &trans       &kp RALT
+                        >;
+                };
+
+                numpad_layer {
+// -----------------------------------------------------------------------------------------
+// | ALT  |     |     |     |     |     |   |  ^  |  7  |  8  |  9  |  <- |  ->  |
+// |      |     |     |     |     |     |   |  )  |  4  |  5  |  6  |  -  |  /   |
+// |      |     |     |     |     |     |   |  (  |  1  |  2  |  3  |  +  |  *   |
+//                    |     |     |     |   |  +  |  0  |  .  |
+                        bindings = <
+   &LALT  &trans &trans &trans &trans &trans    &kp CARET &kp N7 &kp N8 &kp N9 &kp LEFT  &kp RIGHT
+   &trans &trans &trans &trans &trans &trans    &kp RPAR  &kp N4 &kp N5 &kp N6 &kp MINUS &kp FSLH
+   &trans &trans &tog 4 &trans &trans &trans    &kp LPAR  &kp N1 &kp N2 &kp N3 &kp PLUS  &kp ASTRK
+                        &trans &trans &trans    &kp EQUAL &kp N0 &kp DOT
                         >;
                 };
         };
