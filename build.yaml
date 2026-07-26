@@ -18,9 +18,9 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nice_nano_nrf52840_zmk
     shield: corne_left nice_view_adapter nice_view
-  - board: nice_nano
+  - board: nice_nano_nrf52840_zmk
     shield: corne_right nice_view_adapter nice_view
-  - board: nice_nano
+  - board: nice_nano_nrf52840_zmk
     shield: settings_reset
